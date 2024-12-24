@@ -1,8 +1,11 @@
-const Home = () =>{
-    return 
-    (<>
-    <h1> hOME PAGE</h1>
-    </>);
+import React from "react";
+
+const Home = () => {
+    return (
+        <div>
+            <h1>Hello Home</h1>
+        </div>
+    );
 };
 
-export default LectureMedical
+export default Home;

@@ -1,6 +1,6 @@
 const LectureMedical = () =>{
-    return 
-    (<>
+    return (
+    <>
     <h1> Lecture Medical</h1>
     </>);
 };
