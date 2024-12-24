@@ -1,9 +1,11 @@
-const ExamMedi = () => {
-    return (
-        <div>
-            <h1>Hello exam medi</h1>
-        </div>
-    );
-};
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+const ExamMedical = () => {
+  return (
+    <div>
+      Exams 0
+    </div>
+  )
+}
 
-export default ExamMedi;
+export default ExamMedical
