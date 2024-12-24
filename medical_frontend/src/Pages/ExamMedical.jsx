@@ -3,7 +3,6 @@ import { ArrowLeft, Cloud, X, ChevronDown } from "lucide-react";
 import HeaderBar from "../components/specific/HeaderBar";
 import HeroSection from "../components/specific/HeroSection";
 import Button from "../components/layout/Button";
-
 const ExamMedical = () => {
   const [subjects, setSubjects] = useState([]);
   const [selectedFile, setSelectedFile] = useState(null);
@@ -65,29 +64,33 @@ const ExamMedical = () => {
       <HeaderBar />
 
       <main className="flex-1 w-full p-6">
+          
         <HeroSection />
 
-        <div className="flex items-center gap-4 mb-8">
-          <button className="flex items-center gap-2 text-[#40B97B]">
+      
+
+        <div className="flex items-center gap-4 mb-8 mt-[-10px]">
+        <button className="flex items-center gap-2 text-[#40B97B]">
             <ArrowLeft className="w-4 h-4 gray-600" />
-            <span>Exam Medical</span>
+            <span>Home</span>
           </button>
           <div className="flex gap-4 ml-auto">
             <Button
               text="Exam Medical"
-              bgColor="bg-[#40B97B]"
+              bgColor="bg-[#393939]"
               textColor="text-white"
               padding="px-6 py-2"
               onClick={() => console.log("Exam Medical button clicked")}
             />
 
-            <button className="border border-[#40B97B] text-[#40B97B] px-6 py-2 rounded-full">
+            <button className="border border-[#393939] text-[#393939] px-6 py-2 rounded-full">
               Lecture Medical
             </button>
           </div>
+         
         </div>
 
-        <form className="w-full space-y-6">
+        <form className="w-full space-y-12 px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block mb-2">Student No:</label>
@@ -97,18 +100,24 @@ const ExamMedical = () => {
                 placeholder="Student No"
               />
             </div>
-            <div>
-              <label className="block mb-2">Academic Year:</label>
-              <input
-                type="text"
-                className="w-full p-2 border rounded"
-                placeholder="Academic year"
-              />
-            </div>
+            
+          <div>
+  <label className="block mb-2">Academic Year::</label>
+  <select                 className="w-full p-2 border rounded"
+  >
+  <option value="">Select Academic Year</option>
+    <option value="IS">2022/23</option>
+    <option value="SE">2021/22</option>
+    <option value="DS">2020/21</option>
+    <option value="SE">2019/20</option>
+    <option value="DS">2018/19</option>
+  </select>
+</div>
+            
           </div>
 
           <div>
-            <label className="block mb-2">Student Name (With Index):</label>
+            <label className="block mb-2">Student Name (With Initials):</label>
             <input
               type="text"
               className="w-full p-2 border rounded"
@@ -117,18 +126,20 @@ const ExamMedical = () => {
           </div>
 
           <div>
-            <label className="block mb-2">Department:</label>
-            <input
-              type="text"
-              className="w-full p-2 border rounded"
-              placeholder="Department"
-            />
-          </div>
+  <label className="block mb-2">Department:</label>
+  <select className="w-full p-2 border rounded">
+  <option value="">Select Department</option>
+    <option value="IS">Computing & Information Systems</option>
+    <option value="SE">Software Engineering</option>
+    <option value="DS">Data Science</option>
+  </select>
+</div>
+
 
           <div>
             <h3 className="font-semibold mb-4">Exam Medical Details:</h3>
-            <div className="bg-gray-50 p-4 rounded w-full">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div className="bg-gray-100 p-4 rounded w-full">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4 mt-2">
                 <div className="relative">
                   <select
                     id="subjectCode"
@@ -169,13 +180,14 @@ const ExamMedical = () => {
                   type="date"
                   className="w-full p-2 border rounded bg-white"
                 />
-              </div>
-              <button
+                  <button
                 onClick={addSubject}
-                className="bg-[#4052B9] text-white px-4 py-2 rounded"
+                className=" ml-5 bg-[#4052B9] text-white px-0 py-2 rounded"
               >
                 Add More
               </button>
+              </div>
+            
             </div>
           </div>
 
