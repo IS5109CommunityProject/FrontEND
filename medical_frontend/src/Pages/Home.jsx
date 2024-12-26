@@ -9,7 +9,7 @@ const images = [
   "https://www.uwu.ac.lk/ans/images/facilities/medical_center.png",
 ];
 
-const App = () => {
+const Home = () => {
   return (
     <div style={{ height: "100vh", overflowY: "auto", width:"1535px", boxSizing: "border-box" }}>
       {/* Header */}
@@ -90,6 +90,14 @@ const App = () => {
           It provides a fast and efficient way for students to submit medical applications for missed exams or lectures due to health-related reasons, eliminating the need for physical visits to the faculty.
           </p>
           <p>To continue to apply medicals click on 'Apply Now' button.</p>
+=======
+
+const Home = () => {
+    return (
+        <div>
+            <h1>Hello Home</h1>
+        
+
         </div>
         <div style={{ flex: 1, margin: "10px", padding: "10px", backgroundColor: "white", wordWrap: "break-word", borderRadius: 5 }}>
           <h2>News/Announcements</h2>
@@ -116,4 +124,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
