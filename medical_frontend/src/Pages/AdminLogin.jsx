@@ -33,7 +33,7 @@ const LoginPage = () => {
             </Dropdown>
         </header>
         <div style={{width:'50%',height:'70%',marginLeft:'25%', padding:50, marginTop:'5%',justifyContent: 'center', alignItems: 'center'}}>
-            <Link to="/" style={{ marginBottom: 10, display: 'inline-block', textDecoration:'none', color:'#000' }}>
+            <Link to="/Adashboard" style={{ marginBottom: 10, display: 'inline-block', textDecoration:'none', color:'#000' }}>
                 &lsaquo;  Back to Home
             </Link>
             <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px', background: '#fff', boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)' }}>
