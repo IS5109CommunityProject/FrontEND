@@ -1,9 +1,8 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css"; // Import the slideshow styles
-import { Dropdown } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
 
 const images = [
   "https://i1.wp.com/www.sjp.ac.lk/wp-content/uploads/2020/02/DSC_3283.jpg?resize=1141%2C761&ssl=1",
@@ -21,16 +20,7 @@ const Home = () => {
         <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
         </h1>
-        <Dropdown style={{marginRight:"2%"}}>
-          <Dropdown.Toggle variant="success" id="dropdown-basic" >
-            Login
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item as={Link} to="/user-login">User Login</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/admin-login">Admin Login</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <a href="/udashboard" role="button">Login</a>
       </header>
 
       <div>
