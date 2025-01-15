@@ -16,20 +16,24 @@ const udashboard = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      
-      <header className="bg-[#33AC6B] text-white p-4 flex justify-between items-center">
-        <h1 className="text-lg md:text-2xl font-bold">
-          Student Medical System - Faculty of Computing
-        </h1>
-        <p>{currentTime.toLocaleDateString()} | {currentTime.toLocaleTimeString()}</p>
-        <div className="text-sm">
-          <span>Good Morning</span> | <a href="#" className="underline">Logout</a>
-        </div>
-        <div className="">
-  
-</div>
+  <header className="bg-[#33AC6B] text-white p-4 flex justify-between items-center">
+    <h1 className="text-lg md:text-2xl font-bold">
+      Student Medical System - Faculty of Computing
+    </h1>
 
-      </header>
+    <div className="flex flex-grow justify-center items-center text-sm">
+      <p className="font-bold">Welcome Again!</p>
+    </div>
+
+    <div className="flex items-center ml-auto">
+      <p className="font-bold text-sm mr-4">
+        {currentTime.toLocaleDateString()} | {currentTime.toLocaleTimeString()}
+      </p>
+      <a href="#" className="text-black bg-white border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100 no-underline">
+        Logout
+      </a>
+    </div>
+  </header>
 
 
 
@@ -38,11 +42,11 @@ const udashboard = () => {
         
         <aside className="bg-[#33AC6B] text-white w-1/5 p-4">
           <nav className="space-y-4">
-          <a href="#" className="block py-2 px-4 rounded-md bg-green-800 hover:bg-green-600 text-white no-underline">
-  Dashboard  </a>
+          <p className="block py-2 px-4 rounded-md bg-green-800 hover:bg-green-600 text-white no-underline">
+  Dashboard  </p>
 
   <a href="#" class="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
-  Pending Medical Applications
+  Pending Applications
 </a>
 
             <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
@@ -55,7 +59,7 @@ const udashboard = () => {
               Applications Overview
             </a>
             <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
-              Guidelines
+              History
             </a>
             <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
               Settings

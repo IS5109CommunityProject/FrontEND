@@ -270,7 +270,7 @@ const ExamMedical = () => {
           <div className="flex justify-end w-full mb-3">
             <button
               type="submit"
-              className="bg-[#40B97B] text-white pl-5 pr-5 pt-1 pb-1 rounded-full text-lg"
+              className="bg-[#40B97B] text-white pl-5 pr-5 pt-1 pb-1 rounded-full text-lg" onClick={() => navigate('/response')}
             >
               Submit
             </button>
