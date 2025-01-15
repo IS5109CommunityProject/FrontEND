@@ -5,19 +5,21 @@ import Button from '../components/layout/Button';
 const Guidelines = () => {
   return (
     <div style={styles.container}>
-      {/* Header Section */}
-      <div style={styles.headerWrapper}>
-        
-        <div style={styles.header}>
+      {/* Header */}
+      <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center",}}>
+        <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
-        </div>
-        
-      </div>
-      <img
-          src="https://www.sab.ac.lk/computing/sites/default/files/foc-logo-icon_2.png"
-          style={styles.logo}
-          alt="Faculty Logo"
+        </h1>
+        {/*<a href="/exams" role="button" style={{backgroundColor: "#fff", paddingLeft:"15px", paddingRight:"15px", paddingTop:"5px", paddingBottom:"5px", textDecoration:"none", color:"#33AC6B", borderRadius:25, marginRight: "2%"}}>Login</a>*/}
+      </header>
+
+      <div>
+        <img 
+          src="https://www.sab.ac.lk/computing/sites/default/files/foc-logo-icon_2.png" 
+          style={{ height: 50, width: 200, textAlign: "left", marginTop: 10, marginBottom: 10, marginLeft: "10%" }} 
+          alt="Logo"
         />
+      </div>
       <div style={styles.maincontent}>
       <div style={styles.contentBox}>
         <h2 style={styles.heading}>Guidelines to Submit</h2>
@@ -68,8 +70,8 @@ const Guidelines = () => {
 
       {/* Button Group */}
       <div style={styles.buttonGroup}>
-        <button style={styles.examButton}>Exam Medical</button>
-        <button style={styles.lectureButton}>Lecture Medical</button>
+        <button style={styles.examButton}><a href='/exams' style={{textDecoration:"none", color:"#fff",}}>Exam Medical</a></button>
+        <button Link to="/lectureMedi" style={styles.lectureButton}><a href='/lectureMedi' style={{textDecoration:"none", color:"#33AC6B",}}>Lecture Medical</a></button>
       </div>
 
       {/* Footer Section */}
@@ -136,7 +138,7 @@ const styles = {
     display: 'flex',
     //justifyContent: 'center',
     margin: '20px 0',
-    marginLeft:'800px',
+    marginLeft:'1045px',
 
   },
   examButton: {
@@ -144,17 +146,17 @@ const styles = {
     color: '#fff',
     padding: '10px 20px',
     margin: '0 10px',
-    border: 'none',
+    border: '1px solid #33AC6B',
     borderRadius: '5px',
     fontSize: '16px',
     cursor: 'pointer',
   },
   lectureButton: {
-    backgroundColor: '#D9D9D9',
-    color: '#fff',
+    backgroundColor: '#fff',
+    color: '#33AC6B',
     padding: '10px 20px',
     margin: '0 10px',
-    border: 'none',
+    border: '1px solid #33AC6B',
     borderRadius: '5px',
     fontSize: '16px',
     cursor: 'pointer',

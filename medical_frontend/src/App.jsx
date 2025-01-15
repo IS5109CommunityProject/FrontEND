@@ -9,10 +9,10 @@ import Udashboard from "./Pages/udashboard";
 const App = () => (
     <Router>
         <Routes>
+            <Route path="/lectureMedi" element={<LectureMedical/>}/>
             <Route path ="/" element={<Home />}/>
             <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/exams" element={<ExamMedical />} />
-            <Route path="/lectureMedi" element={<LectureMedical/>}/>
             <Route path="/user-login" element={<UserLogin />} />
             <Route path="/udashboard" element={<Udashboard/>} />
         </Routes>

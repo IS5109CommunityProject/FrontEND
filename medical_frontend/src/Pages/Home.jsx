@@ -16,11 +16,13 @@ const Home = () => {
     <div style={{ height: "100vh", overflowY: "auto", width:"1535px", boxSizing: "border-box" }}>
 
       {/* Header */}
-      <header style={{ backgroundColor: "#33AC6B", color: "white", padding: "10px" ,display: "flex", justifyContent: "space-between", alignItems: "center",}}>
+      <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center",}}>
         <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
         </h1>
-        <a href="/user-login" role="button">Login</a>
+
+        <a href="/user-login" role="button" style={{backgroundColor: "#fff", paddingLeft:"15px", paddingRight:"15px", paddingTop:"5px", paddingBottom:"5px", textDecoration:"none", color:"#33AC6B", borderRadius:25, marginRight: "2%"}}>Login</a>
+
       </header>
 
       <div>
@@ -46,7 +48,7 @@ const Home = () => {
             </div>
           ))}
         </Slide>
-
+        {/*
         <button
           style={{
             position: "absolute",
@@ -64,7 +66,7 @@ const Home = () => {
           }}
         >
           Apply Now
-        </button>
+        </button>*/}
       </div>
 
 
@@ -93,18 +95,7 @@ const Home = () => {
       </div>
 
       {/* Footer */}
-      <footer
-        style={{
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          width: "100%",
-          backgroundColor: "#33AC6B",
-          color: "white",
-          textAlign: "center",
-          padding: "10px",
-        }}
-      >
+      <footer style={{position: "fixed",bottom: 0,left: 0,width: "100%",backgroundColor: "#33AC6B",color: "white",textAlign: "center",padding: "10px",}}>
         <p style={{ margin: 0 }}>Copyright © 2024</p>
       </footer>
     </div>
