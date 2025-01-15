@@ -10,8 +10,8 @@ const LoginPage = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     // Perform login logic here
-    console.log('Registration Number:', regNumber);
-    console.log('Password:', password);
+    console.log('username:', regNumber);
+    console.log('password:', password);
   };
 
   return (
