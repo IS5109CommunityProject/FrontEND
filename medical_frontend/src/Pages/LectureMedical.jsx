@@ -65,7 +65,7 @@ const LectureMedical = () => {
   return (
     <div className="min-h-screen w-full bg-white flex flex-col">
       {/* Header */}
-      <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center",}}>
+      <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop:10, paddingBottom:10}}>
         <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
         </h1>
