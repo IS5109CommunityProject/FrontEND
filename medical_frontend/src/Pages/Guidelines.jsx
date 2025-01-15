@@ -5,12 +5,12 @@ import Button from '../components/layout/Button';
 const Guidelines = () => {
   return (
     <div style={styles.container}>
-      {/* Header */}
+     
       <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop:10, paddingBottom:10}}>
         <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
         </h1>
-        {/*<a href="/exams" role="button" style={{backgroundColor: "#fff", paddingLeft:"15px", paddingRight:"15px", paddingTop:"5px", paddingBottom:"5px", textDecoration:"none", color:"#33AC6B", borderRadius:25, marginRight: "2%"}}>Login</a>*/}
+     
       </header>
 
       <div>
@@ -65,16 +65,16 @@ const Guidelines = () => {
       
       </div>
         
-        <button style={styles.button}>Further Details</button>
+       
       </div>
 
-      {/* Button Group */}
+     
       <div style={styles.buttonGroup}>
         <button style={styles.examButton}><a href='/exams' style={{textDecoration:"none", color:"#fff",}}>Exam Medical</a></button>
         <button Link to="/lectureMedi" style={styles.lectureButton}><a href='/lectureMedi' style={{textDecoration:"none", color:"#33AC6B",}}>Lecture Medical</a></button>
       </div>
 
-      {/* Footer Section */}
+      
       <div style={styles.footer}>
         copyrights
       </div>
@@ -108,16 +108,8 @@ const styles = {
     marginLeft: '110px',
     marginTop:'20px',
   },
-  contentBox: {
-    //backgroundColor: '#fff',
-    //width: '80%',
-    //margin: '20px auto',
-    //padding: '30px',
-    //borderRadius: '8px',
-    //boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-    //textAlign: 'left',
-    //textAlign:'right'
-  },
+  
+  
   maincontent:{
     backgroundColor: '#fff',
     width: '80%',

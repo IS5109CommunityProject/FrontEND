@@ -5,6 +5,7 @@ import Guidelines from "./Pages/Guidelines";
 import LectureMedical from "./Pages/LectureMedical";
 import UserLogin from "./Pages/UserLogin";
 import Udashboard from "./Pages/udashboard";
+import MedicalFormResponse from "./Pages/response";
 
 const App = () => (
     <Router>
@@ -15,6 +16,7 @@ const App = () => (
             <Route path="/exams" element={<ExamMedical />} />
             <Route path="/user-login" element={<UserLogin />} />
             <Route path="/udashboard" element={<Udashboard/>} />
+            <Route path="/response" element={<MedicalFormResponse/>} />
         </Routes>
     </Router>
 );
