@@ -20,7 +20,7 @@ const Home = () => {
         <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
         </h1>
-        <a href="/udashboard" role="button">Login</a>
+        <a href="/user-login" role="button">Login</a>
       </header>
 
       <div>
