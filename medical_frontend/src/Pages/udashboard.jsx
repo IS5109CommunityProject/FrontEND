@@ -60,7 +60,7 @@ const udashboard = () => {
             <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
               Settings
             </a>
-            <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black bg-white">
+            <a href="/guidelines" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black bg-white">
               Apply
             </a>
           </nav>
