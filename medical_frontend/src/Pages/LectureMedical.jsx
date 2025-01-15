@@ -3,8 +3,10 @@ import { ArrowLeft, Cloud, X, ChevronDown } from "lucide-react";
 import HeaderBar from "../components/specific/HeaderBar";
 import HeroSection from "../components/specific/HeroSection";
 import Button from "../components/layout/Button";
+import { useNavigate } from 'react-router-dom';
 
 const LectureMedical = () => {
+  const navigate = useNavigate();
   const [subjects, setSubjects] = useState([]);
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -62,21 +64,30 @@ const LectureMedical = () => {
 
   return (
     <div className="min-h-screen w-full bg-white flex flex-col">
-      <HeaderBar />
+      {/* Header */}
+      <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center",}}>
+        <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
+          Student Medical System - Faculty of Computing
+        </h1>
+        <a href="/udashboard" role="button" style={{backgroundColor: "#fff", paddingLeft:"15px", paddingRight:"15px", paddingTop:"5px", paddingBottom:"5px", textDecoration:"none", color:"#33AC6B", borderRadius:25, marginRight: "2%"}}>Dashboard</a>
+      </header>
 
-      <main className="flex-1 w-full p-6">
+      <main className="flex-1 w-full">
           
-        <HeroSection />
+        <div>
+          <img 
+            src="https://www.sab.ac.lk/computing/sites/default/files/foc-logo-icon_2.png" 
+            style={{ height: 50, width: 200, textAlign: "left", marginTop: 10, marginBottom: 10, marginLeft: "2%" }} 
+            alt="Logo"
+          />
+        </div>
 
       
 
-        <div className="flex items-center gap-4 mb-8 mt-[-10px]">
-        <button className="flex items-center gap-2 text-[#40B97B]">
-            <ArrowLeft className="w-4 h-4 gray-600" />
-            <span>Home</span>
-          </button>
+        <div className="flex items-center gap-4 mb-8 mt-[-50px] mr-10">
+        
           <div className="flex gap-4 ml-auto">
-             <button className="border border-[#393939] bg-[#D9D9D9] text-black px-6 py-2 rounded-full">
+             <button  className="border border-[#33ACB6] bg-[#fff] text-black px-6 py-2 rounded-full" onClick={() => navigate('/exams')}>
               Exam Medical
             </button>
             <button className=" bg-[#33AC6B] text-white px-6 py-2 rounded-full">
@@ -133,7 +144,7 @@ const LectureMedical = () => {
 
 
           <div>
-            <h3 className="font-semibold mb-4">Exam Medical Details:</h3>
+            <h3 className="font-semibold mb-4">Lecture Medical Details:</h3>
             <div className="bg-gray-100 p-4 rounded w-full">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4 mt-2">
                 <div className="relative">
@@ -251,10 +262,10 @@ const LectureMedical = () => {
             </div>
           </div>
 
-          <div className="flex justify-end w-full">
+          <div className="flex justify-end w-full mb-3">
             <button
               type="submit"
-              className="bg-[#40B97B] text-white px-8 py-3 rounded-full text-lg"
+              className="bg-[#33ac6b] text-white pl-5 pr-5 pt-1 pb-1 rounded-full text-lg"
             >
               Submit
             </button>
@@ -262,8 +273,8 @@ const LectureMedical = () => {
         </form>
       </main>
 
-      <footer className="w-full bg-[#40B97B] text-white p-4 text-center">
-        <p>copyrights</p>
+      <footer className="w-full bg-[#33AC6B] text-white text-center">
+        <p className="mt-2">Copyright © 2024</p>
       </footer>
     </div>
   );

@@ -64,7 +64,7 @@ const Udashboard = () => {
     <Link to="/settings">Settings</Link>
   </li>
   <li>
-  <Link to="/LectureMedical" className="apply-button">
+  <Link to="/guidelines" className="apply-button">
     Apply
   </Link>
 </li>
