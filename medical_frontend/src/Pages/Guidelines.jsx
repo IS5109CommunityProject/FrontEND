@@ -6,11 +6,12 @@ const Guidelines = () => {
   return (
     <div style={styles.container}>
      
+      {/* Header */}
       <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop:10, paddingBottom:10}}>
-        <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
+          <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
           Student Medical System - Faculty of Computing
-        </h1>
-     
+          </h1>
+          <a href="/udashboard" role="button" style={{backgroundColor: "#fff", paddingLeft:"15px", paddingRight:"15px", paddingTop:"5px", paddingBottom:"5px", textDecoration:"none", color:"#33AC6B", borderRadius:25, marginRight: "2%"}}>Dashboard</a>
       </header>
 
       <div>
@@ -76,7 +77,7 @@ const Guidelines = () => {
 
       
       <div style={styles.footer}>
-        copyrights
+        Copyright © 2024
       </div>
     </div>
   );
@@ -139,7 +140,7 @@ const styles = {
     padding: '10px 20px',
     margin: '0 10px',
     border: '1px solid #33AC6B',
-    borderRadius: '5px',
+    borderRadius: '45px',
     fontSize: '16px',
     cursor: 'pointer',
   },
@@ -149,7 +150,7 @@ const styles = {
     padding: '10px 20px',
     margin: '0 10px',
     border: '1px solid #33AC6B',
-    borderRadius: '5px',
+    borderRadius: '45px',
     fontSize: '16px',
     cursor: 'pointer',
   },

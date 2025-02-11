@@ -4,95 +4,34 @@ import React from "react";
 
 const MedicalFormResponse = () => {
     return (
-        <div style={{ fontFamily: "Arial, sans-serif", margin: "0", padding: "0" }}>
+        <div className="h-screen w-full overflow-hidden">
             {/* Header */}
-            <header
-                style={{
-                    backgroundColor: "#4CAF50",
-                    padding: "20px 10px",
-                    color: "white",
-                    textAlign: "left",
-                    width: "100%",
-                    position: "fixed",
-                    top: "0",
-                    zIndex: "1",
-                   
-                }}
-            >
-                <h1 style={{ margin: "0" }}>Student Medical System - Faculty of Computing</h1>
+            <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop:10, paddingBottom:10}}>
+                <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
+                Student Medical System - Faculty of Computing
+                </h1>
+                <a href="/udashboard" role="button" style={{backgroundColor: "#fff", paddingLeft:"15px", paddingRight:"15px", paddingTop:"5px", paddingBottom:"5px", textDecoration:"none", color:"#33AC6B", borderRadius:25, marginRight: "2%"}}>Dashboard</a>
             </header>
 
-            {/* Logo under the Green Bar */}
-            <div
-                style={{
-                    marginTop: "80px", // Adjusted for header height
-                    display: "flex",
-                    alignItems: "center",
-                    paddingLeft: "20px",
-                }}
-            >
-                <img
-                    src="./logo.png" 
-                    alt="Faculty of Computing Logo"
-                    style={{ width: "900px" }}
-                />
-            </div>
+            <img 
+                src="https://www.sab.ac.lk/computing/sites/default/files/foc-logo-icon_2.png" 
+                style={{ height: 50, width: 200, textAlign: "left", marginTop: 20, marginBottom: 10, marginLeft: "10%" }} 
+                alt="Logo"
+            />
 
-            {/* Main Content */}
-            <main
-                style={{
-                    margin: "30px auto 0", // Space after the logo
-                    textAlign: "center",
-                    maxWidth: "600px", // Increased width for longer response box
-                    padding: "20px",
-                    position: "relative",
-
-                   
-                }}
-            >
-                {/* Form Response Box */}
-                <div
-                    style={{
-                        marginTop: "40px",
-                        border: "1px solid #ddd",
-                        borderRadius: "8px",
-                        padding: "20px", // Increased padding for a larger box
-                        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                        backgroundColor: "#fff",
-                        minWidth: "900px",
-                       
-                    }}
-                >
-                    <h2 style={{ color: "#333", margin: "10px 0" }}>Medical Form</h2>
-                    <p style={{ color: "#666", fontSize: "18px", marginBottom: "20px" }}>Your response has been recorded.</p>
-                    <a
-                        href="/"
-                        style={{
-                            display: "inline-block",
-                            marginTop: "20px",
-                            color: "#4CAF50",
-                            textDecoration: "none",
-                            fontWeight: "bold",
-                        }}
-                    >
-                        <u>Submit another response</u>
-                    </a>
+            <div style={{marginTop:150, marginBottom:195}}>
+                <div style={{marginTop:"51%"}} className="bg-white h-auto w-3/5 m-auto rounded-4 opacity-85 border-t-8 border-[#33AC6B] border-solid ">
+                    <div className="bg-white h-auto w-full m-auto rounded-4 opacity-85 border-2 border-[#33AC6B] border-solid ">
+                        <h1 className="ml-8 mt-4">Medical Form</h1>
+                        <p className="text-justify text-xl m-8">Your response has been recorded</p>
+                        <a href="/guidelines" className="text-xl m-8 text-[#33AC6B]">Submit another response</a> 
+                        <p></p>          
+                    </div>              
                 </div>
-            </main>
-
-            {/* Footer */}
-            <footer
-                style={{
-                    backgroundColor: "#4CAF50",
-                    padding: "10px",
-                    color: "white",
-                    textAlign: "center",
-                    width: "100%",
-                    position: "fixed",
-                    bottom: "0",
-                }}
-            >
-                <p style={{ margin: "0" }}>copyrights</p>
+            </div>
+            
+            <footer className="w-full b-0 p-1 bg-[#33AC6B] text-white">
+                <p className="text-center mt-2">Copyright © 2024</p>
             </footer>
         </div>
     );
