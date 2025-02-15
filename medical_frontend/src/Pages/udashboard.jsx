@@ -1,9 +1,9 @@
-
 import React, { useState, useEffect } from "react";
-
+import { useNavigate } from 'react-router-dom';
 
 const udashboard = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,39 +16,32 @@ const udashboard = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-  <header className="bg-[#33AC6B] text-white p-4 flex justify-between items-center">
-    <h1 className="text-lg md:text-2xl font-bold">
-      Student Medical System - Faculty of Computing
-    </h1>
-
-    <div className="flex flex-grow justify-center items-center text-sm">
-      <p className="font-bold">Welcome Again!</p>
-    </div>
-
-    <div className="flex items-center ml-auto">
-      <p className="font-bold text-sm mr-4">
-        {currentTime.toLocaleDateString()} | {currentTime.toLocaleTimeString()}
-      </p>
-      <a href="#" className="text-black bg-white border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100 no-underline">
-        Logout
-      </a>
-    </div>
-  </header>
+      <header style={{ backgroundColor: "#33AC6B", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", paddingTop:10, paddingBottom:10}}>
+        <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
+          Student Medical System - Faculty of Computing
+        </h1>
+        <div className="flex flex-grow justify-center items-center text-sm">
+          <h5 className="font-bold mt-2 mr-32">Welcome Again!</h5>
+          <p className="font-bold text-sm mt-3 mr-8">
+            {currentTime.toLocaleDateString()} | {currentTime.toLocaleTimeString()}
+          </p>
+        </div>
+        
+        <button className="bg-white text-[#000] hover:text-[#33AC6B] px-6 py-2 rounded-full top-4 absolute right-6 border-[#33AC6B] border-solid border-2" onClick={() => navigate('/')}>
+            Logout
+        </button>
+      </header>
 
 
-
-      
       <div className="flex">
         
         <aside className="bg-[#33AC6B] text-white w-1/5 p-4">
           <nav className="space-y-4">
-          <p className="block py-2 px-4 rounded-md bg-green-800 hover:bg-green-600 text-white no-underline">
-  Dashboard  </p>
+          <p className="block py-2 px-4 rounded-md bg-green-800 hover:bg-green-600 text-white no-underline">Dashboard  </p>
 
-  <a href="#" class="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
-  Pending Applications
-</a>
-
+            <a href="#" class="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
+              Pending Applications
+            </a>
             <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
               Approved Applications
             </a>
@@ -64,7 +57,7 @@ const udashboard = () => {
             <a href="#" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black">
               Settings
             </a>
-            <a href="/guidelines" className="block py-2 px-4 rounded-md hover:bg-white no-underline text-black bg-white">
+            <a href="/guidelines" className="block py-2 px-4 rounded-md no-underline text-[#000] hover:text-[#33AC6B] bg-white">
               Apply
             </a>
           </nav>

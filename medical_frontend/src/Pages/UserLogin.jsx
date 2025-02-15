@@ -20,18 +20,6 @@ const LoginPage = () => {
             <h1 style={{ margin: 0, textAlign: "left", fontSize: 25 , marginLeft: "2%"}}>
             Student Medical System - Faculty of Computing
             </h1>
-            {/*
-            <Dropdown style={{marginRight:"2%"}}>
-                <Dropdown.Toggle variant="success" id="dropdown-basic" >
-                    Login
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item as={Link} to="/user-login">User Login</Dropdown.Item>
-                    <Dropdown.Item as={Link} to="/admin-login">Admin Login</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            */}
         </header>
         <div style={{width:'50%',height:'70%',marginLeft:'25%', padding:50, marginTop:'5%',justifyContent: 'center', alignItems: 'center'}}>
             <Link to="/udashboard" style={{ marginBottom: 10, display: 'inline-block', textDecoration:'none', color:'#000' }}>
