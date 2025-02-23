@@ -75,7 +75,7 @@ const Home = () => {
                 <h3 className="mb-8 ml-16">Announcements</h3>
                 <div className="mt-4 mb-4">
                     <div className="bg-white h-auto w-4/5 m-auto rounded-4 opacity-85 border-[#33AC6B] border-solid border-2">
-                        <h4 className="ml-8 mt-4">Announcement1</h4>
+                        <h4 className="ml-8 mt-4">Announcement 1</h4>
                         <p className="text-justify text-xl m-8">Lorem Ipsumes simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las 
                             industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) </p>
                     </div>
