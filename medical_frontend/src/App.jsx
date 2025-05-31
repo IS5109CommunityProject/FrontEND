@@ -5,7 +5,7 @@ import LectureMedical from "./Pages/LectureMedical";
 import UserLogin from "./Pages/UserLogin";
 import Udashboard from "./Pages/udashboard";
 import MedicalFormResponse from "./Pages/response";
-import Home from "./Pages/Home";
+import {Home} from "./Pages/Home";
 
 const App = () => (
     <Router>
